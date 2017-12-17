@@ -1,0 +1,15 @@
+Student Name : {{$ctrl.Name}}
+Taken Subjects : 
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="subject in $ctrl.Subjects">
+			<td>{{subject.Id}}</td>
+			<td>{{subject.Name}}</td>
+		</tr></tbody>
+</table>
